@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Página no encontrada | x(MAX)</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0a0a;
+      color: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* Nav */
+    nav {
+      width: 100%;
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    nav a img {
+      height: 32px;
+      width: auto;
+    }
+
+    /* Main */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error-code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 700;
+      line-height: 1;
+      color: #c8a04e;
+      letter-spacing: -0.04em;
+      margin-bottom: 1rem;
+    }
+
+    .error-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .error-subtitle {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 2.5rem;
+      max-width: 360px;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      padding: 0.75rem 2rem;
+      background: #c8a04e;
+      color: #0a0a0a;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover { opacity: 0.85; }
+
+    .link-secondary {
+      font-size: 0.875rem;
+      color: #888;
+      transition: color 0.2s;
+    }
+
+    .link-secondary:hover { color: #fafafa; }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #555;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    footer a {
+      color: #555;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: #888; }
+
+    @media (max-width: 480px) {
+      nav { padding: 1rem 1.25rem; }
+      footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">
+      <img src="assets/logo-dark.png" alt="x(MAX)">
+    </a>
+  </nav>
+
+  <main>
+    <div class="error-code">404</div>
+    <h1 class="error-heading">Página no encontrada</h1>
+    <p class="error-subtitle">La página que buscas no existe o fue movida.</p>
+    <div class="actions">
+      <a href="index.html" class="btn-primary">Volver al inicio</a>
+      <a href="https://wa.me/573001620966" class="link-secondary" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 x(MAX) PORMAX</span>
+    <a href="privacidad.html">Privacidad</a>
+  </footer>
+
+</body>
+</html>

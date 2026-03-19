@@ -1,0 +1,3351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE68RVN55R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PE68RVN55R');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x(MAX) — Tu negocio vendiendo 24/7</title>
+    <meta name="description" content="Sistema inteligente de pedidos, CRM, chatbot y marketing digital para pequeñas empresas que quieren vender más.">
+    <meta property="og:title" content="x(MAX) — Tu negocio vendiendo 24/7">
+    <meta property="og:description" content="Pedidos, CRM, chatbot y marketing digital. Todo en un solo ecosistema para que vendas más sin trabajar más.">
+    <meta property="og:image" content="https://xmax-pormax.netlify.app/assets/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://xmax-pormax.netlify.app">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "x(MAX)",
+        "alternateName": "PORMAX",
+        "description": "Sistema inteligente de pedidos, CRM, chatbot y marketing digital para pequeñas empresas.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Plan Básico",
+                "price": "50",
+                "priceCurrency": "USD",
+                "description": "App + CRM + Catálogo + Chatbot 24/7 + Onboarding 90 días"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plan Impulso",
+                "price": "75",
+                "priceCurrency": "USD",
+                "description": "Todo lo del Plan Básico + Fotos profesionales + Redes sociales + Videos"
+            },
+            {
+                "@type": "Offer",
+                "name": "Plan Pro",
+                "priceRange": "$150 - $250",
+                "priceCurrency": "USD",
+                "description": "Todo lo del Plan Impulso + Marketing activo 90 días + Pauta digital incluida"
+            }
+        ],
+        "provider": {
+            "@type": "Organization",
+            "name": "x(MAX) PORMAX",
+            "url": "https://xmax-pormax.netlify.app",
+            "email": "somos.xmax@gmail.com",
+            "telephone": "+573001620966",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61578468688463",
+                "https://www.instagram.com/somoxmax/"
+            ]
+        }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #fafafa;
+            --gray-50: #f5f5f7;
+            --gray-100: #e8e8ed;
+            --gray-200: #d2d2d7;
+            --gray-300: #b0b0b8;
+            --gray-400: #86868b;
+            --gray-500: #6e6e73;
+            --gray-600: #424245;
+            --gray-700: #2d2d30;
+            --gray-800: #1d1d1f;
+            --accent: #c8a04e;
+            --accent-light: #e8c96e;
+            --accent-glow: rgba(200, 160, 78, 0.15);
+            --gradient-dark: linear-gradient(180deg, #0a0a0a 0%, #1a1a1f 100%);
+            --gradient-accent: linear-gradient(135deg, #c8a04e 0%, #e8c96e 50%, #c8a04e 100%);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+            --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: var(--black);
+        }
+
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+        /* ========== UTILITY ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 80px);
+        }
+
+        .section-label {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--gray-400);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ========== NAV ========== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 clamp(20px, 5vw, 80px);
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: background 0.3s;
+        }
+
+        .nav-logo img {
+            height: 28px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-300);
+            transition: color 0.2s;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-links a:hover { color: var(--white); }
+
+        .nav-cta {
+            background: var(--white) !important;
+            color: var(--black) !important;
+            padding: 0.5rem 1.25rem !important;
+            border-radius: 100px;
+            font-weight: 600 !important;
+            font-size: 0.8rem !important;
+            transition: transform 0.2s var(--ease-spring), box-shadow 0.2s !important;
+        }
+
+        .nav-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(255,255,255,0.15);
+        }
+
+        .nav-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+        }
+        .nav-hamburger span {
+            width: 22px;
+            height: 2px;
+            background: var(--white);
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            flex-direction: column;
+            padding: 2rem;
+            gap: 0;
+        }
+        .mobile-menu.open { display: flex; }
+        .mobile-menu a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: var(--gray-300);
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover { color: var(--white); }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 20px 80px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200,160,78,0.08) 0%, transparent 60%);
+        }
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid rgba(200,160,78,0.3);
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            background: rgba(200,160,78,0.05);
+        }
+
+        .hero-badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 .highlight {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.2vw, 1.35rem);
+            color: var(--gray-400);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            background: var(--white);
+            color: var(--black);
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s var(--ease-spring), box-shadow 0.3s;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            border: 1px solid var(--gray-600);
+            color: var(--white);
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-secondary:hover {
+            border-color: var(--gray-400);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: clamp(2rem, 5vw, 4rem);
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .hero-stat-label {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        /* ========== PROBLEM ========== */
+        .problem {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .problem .section-title { color: var(--black); }
+
+        .problem-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .problem-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .problem-card {
+            flex: 0 1 calc(33.333% - 1rem);
+            min-width: 260px;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid var(--gray-100);
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+        }
+        .problem-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+        }
+
+        .problem-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: #fee2e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .problem-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+
+        .problem-card p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        .problem-stat {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--gray-800);
+            border-radius: 16px;
+            color: var(--white);
+        }
+        .problem-stat p {
+            font-size: clamp(0.95rem, 2vw, 1.15rem);
+            font-weight: 500;
+        }
+        .problem-stat strong {
+            color: var(--accent);
+        }
+
+        /* ========== HOW IT WORKS ========== */
+        .how-it-works {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--black);
+        }
+
+        .how-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(2rem, 5vw, 5rem);
+            align-items: center;
+        }
+
+        .step:nth-child(even) .step-content { order: 2; }
+        .step:nth-child(even) .step-visual { order: 1; }
+
+        .step-number {
+            font-family: var(--font-display);
+            font-size: 5rem;
+            font-weight: 800;
+            color: rgba(200,160,78,0.1);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .step h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            font-size: 1rem;
+            color: var(--gray-400);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .step-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--gray-300);
+        }
+        .step-features li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .step-visual {
+            background: var(--gray-800);
+            border-radius: 24px;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-visual-inner {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-visual-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-visual-text {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray-400);
+        }
+
+        .step-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            background: radial-gradient(circle at 30% 70%, rgba(200,160,78,0.05) 0%, transparent 50%);
+        }
+
+        /* ========== BENEFITS ========== */
+        .benefits {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .benefits-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .benefits .section-title { color: var(--black); }
+
+        .benefits-top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .benefit-stat-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border: 1px solid var(--gray-100);
+            transition: transform 0.3s var(--ease-out);
+        }
+        .benefit-stat-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .benefit-big-number {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .benefit-stat-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-top: 0.75rem;
+            color: var(--black);
+        }
+
+        .benefit-stat-card p {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--white);
+            border-radius: 14px;
+            border: 1px solid var(--gray-100);
+        }
+
+        .benefit-check {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #dcfce7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+            font-size: 0.75rem;
+            color: #16a34a;
+            font-weight: 700;
+        }
+
+        .benefit-item p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.5;
+        }
+
+        /* ========== COMPARISON ========== */
+        .comparison {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--black);
+        }
+
+        .comparison-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .comparison-table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+        }
+
+        .comparison-table thead th {
+            padding: 1.25rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: center;
+            background: var(--gray-800);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: var(--gray-300);
+        }
+
+        .comparison-table thead th:first-child {
+            text-align: left;
+            padding-left: 1.5rem;
+        }
+
+        .comparison-table thead th.highlight-col {
+            background: rgba(200,160,78,0.1);
+            color: var(--accent);
+            position: relative;
+        }
+        .comparison-table thead th.highlight-col::before {
+            content: '';
+            display: none;
+        }
+
+        .comparison-table tbody td {
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            color: var(--gray-400);
+        }
+
+        .comparison-table tbody td:first-child {
+            text-align: left;
+            padding-left: 1.5rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .comparison-table tbody td.highlight-col {
+            background: rgba(200,160,78,0.03);
+        }
+
+        .comparison-table .check { color: #4ade80; font-weight: 700; font-size: 1.1rem; }
+        .comparison-table .cross { color: #f87171; font-size: 0.85rem; }
+        .comparison-table .partial { color: #fbbf24; font-size: 0.85rem; }
+
+        .comparison-table tfoot td {
+            padding: 1.25rem 1rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            color: var(--gray-300);
+        }
+        .comparison-table tfoot td.highlight-col {
+            color: var(--accent);
+            background: rgba(200,160,78,0.05);
+        }
+
+        /* ========== PRICING ========== */
+        .pricing {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .pricing .section-title { color: var(--black); }
+        .pricing .section-subtitle { margin: 0.75rem auto 0; color: var(--gray-500); }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .price-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--gray-100);
+            position: relative;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+        }
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+        }
+
+        .price-card.featured {
+            background: var(--gray-800);
+            color: var(--white);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px var(--accent), 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        /* Desktop: reorder so Impulso (1st in HTML) shows in center */
+        @media (min-width: 769px) {
+            .pricing-grid > .price-card.featured { order: 2; }
+            .pricing-grid > .price-card:not(.featured):first-of-type { order: 2; }
+            .pricing-grid > .price-card.featured { order: 2; }
+            .pricing-grid > .price-card:nth-child(1) { order: 2; }
+            .pricing-grid > .price-card:nth-child(2) { order: 1; }
+            .pricing-grid > .price-card:nth-child(3) { order: 3; }
+        }
+
+        .price-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-accent);
+            color: var(--black);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 4px 16px;
+            border-radius: 100px;
+        }
+
+        .price-card-name {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .price-card-price {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin: 1rem 0 0.25rem;
+        }
+
+        .price-card-period {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            margin-bottom: 0.75rem;
+        }
+
+        .price-card-commission {
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            background: var(--gray-50);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .price-card.featured .price-card-commission {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .price-card-commission strong {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .price-card-commission span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        .price-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .price-card.featured .price-features li {
+            border-bottom-color: rgba(255,255,255,0.06);
+            color: var(--gray-200);
+        }
+        .price-features li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .price-example {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            padding: 0.75rem 1rem;
+            background: var(--gray-50);
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        .price-card.featured .price-example {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .price-btn {
+            width: 100%;
+            padding: 0.9rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-align: center;
+            transition: transform 0.2s var(--ease-spring), box-shadow 0.2s;
+            display: block;
+        }
+        .price-btn:hover {
+            transform: scale(1.02);
+        }
+
+        .price-btn-dark {
+            background: var(--black);
+            color: var(--white);
+        }
+        .price-btn-light {
+            background: var(--white);
+            color: var(--black);
+            border: 1px solid var(--gray-600);
+        }
+        .price-card.featured .price-btn-light {
+            background: var(--accent);
+            color: var(--black);
+            border: none;
+        }
+
+        /* ========== TIMELINE ========== */
+        .timeline {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--black);
+        }
+
+        .timeline-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-track {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-track::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--gray-700));
+        }
+
+        .timeline-month {
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin: 30px auto 1.5rem;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 0 4px var(--black), 0 0 0 6px rgba(200,160,78,0.3);
+        }
+
+        .timeline-month-label {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .timeline-month h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .timeline-items {
+            list-style: none;
+            text-align: center;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .timeline-items li {
+            font-size: 0.85rem;
+            color: var(--gray-400);
+            padding: 0.4rem 0;
+            padding-left: 1rem;
+            position: relative;
+            text-align: left;
+        }
+
+        .timeline-items li::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .timeline-cta {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(200,160,78,0.05);
+            border: 1px solid rgba(200,160,78,0.15);
+            border-radius: 16px;
+        }
+
+        .timeline-cta p {
+            color: var(--gray-300);
+            font-size: 1rem;
+        }
+
+        .timeline-cta strong {
+            color: var(--accent);
+        }
+
+        /* ========== WHY ========== */
+        .why {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .why-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .why .section-title { color: var(--black); }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .why-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--gray-100);
+            transition: transform 0.3s var(--ease-out);
+        }
+        .why-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .why-card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .why-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+
+        /* ========== CTA FINAL ========== */
+        .final-cta {
+            padding: clamp(100px, 15vw, 200px) 0;
+            background: var(--black);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(200,160,78,0.1) 0%, transparent 60%);
+        }
+
+        .final-cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--gray-400);
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .final-cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--gray-400);
+        }
+
+        .contact-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        /* ========== CONTACT FORM ========== */
+        .contact-form {
+            max-width: 480px;
+            margin: 3rem auto 0;
+            text-align: left;
+        }
+
+        .contact-form .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .contact-form .form-group.full {
+            flex: unset;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.03em;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--gradient-accent);
+            color: var(--black);
+            border: none;
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(200,160,78,0.3);
+        }
+
+        .form-divider {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2.5rem auto;
+            max-width: 480px;
+            color: var(--gray-500);
+            font-size: 0.8rem;
+        }
+
+        .form-divider::before,
+        .form-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* ========== MARKETING DIGITAL ========== */
+        .marketing {
+            padding: clamp(80px, 12vw, 140px) 0;
+            background: var(--black);
+        }
+
+        .marketing-subtitle {
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            color: var(--gray-400);
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            text-align: center;
+        }
+
+        .marketing-note-top {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .marketing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .mkt-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            transition: transform 0.3s var(--ease-out), border-color 0.3s;
+        }
+
+        .mkt-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .mkt-card.mkt-featured {
+            border-color: var(--accent);
+        }
+
+        .mkt-card-badge {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--white);
+            color: var(--black);
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            padding: 4px 12px;
+            border-radius: 100px;
+            text-transform: uppercase;
+        }
+
+        .mkt-card-name {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .mkt-card-price {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: var(--accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .mkt-card-period {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-bottom: 2rem;
+        }
+
+        .mkt-section-label {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .mkt-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+
+        .mkt-features li {
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--gray-300);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .mkt-features li::before {
+            content: '✓';
+            color: #4ade80;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .mkt-client-label {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gray-400);
+            margin-bottom: 0.5rem;
+        }
+
+        .mkt-client-note {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-bottom: 1.5rem;
+        }
+
+        .mkt-result {
+            background: rgba(74, 222, 128, 0.08);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            color: #4ade80;
+            font-weight: 600;
+        }
+
+        .mkt-disclaimer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+        }
+
+        .mkt-choose {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .marketing-grid {
+                display: flex !important;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 1rem;
+                padding-bottom: 1rem;
+            }
+            .marketing-grid > .mkt-card {
+                flex: 0 0 85% !important;
+                min-width: 0 !important;
+                scroll-snap-align: center;
+            }
+            .marketing-grid::-webkit-scrollbar { height: 4px; }
+            .marketing-grid::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 4px; }
+            .marketing-grid::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: var(--black);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo img {
+            height: 24px;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .footer-social a:hover {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .footer-social svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--gray-400);
+        }
+
+        /* ========== RESPONSIVE ========== */
+
+        /* --- Tablet and below (768px) --- */
+        @media (max-width: 768px) {
+            /* 1. Hamburger menu */
+            .nav-links { display: none; }
+            .nav-hamburger { display: flex; }
+
+            /* 5. Steps: stack vertically, mockup below text */
+            .step { grid-template-columns: 1fr; }
+            .step:nth-child(even) .step-content { order: 1; }
+            .step:nth-child(even) .step-visual { order: 2; }
+            .step-visual { aspect-ratio: auto; min-height: 320px; }
+            .step-number { font-size: 3.5rem; }
+            .steps { gap: 4rem; }
+
+            /* Benefits: stack stat cards */
+            .benefits-top { grid-template-columns: 1fr; }
+
+            /* Why: stack cards */
+            .why-grid { grid-template-columns: 1fr; }
+
+            /* Timeline: stack months */
+            .timeline-track { grid-template-columns: 1fr; gap: 2rem; }
+            .timeline-track::before { display: none; }
+
+            /* 9. Stats bar */
+            .hero-stats { gap: 1.5rem; }
+
+            /* 4. Pricing cards: horizontal scroll carousel */
+            .pricing-grid {
+                display: flex !important;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                gap: 1rem;
+                padding-bottom: 1rem;
+                max-width: 100%;
+                margin: 0;
+            }
+            .pricing-grid > .price-card {
+                flex: 0 0 80% !important;
+                min-width: 0 !important;
+                max-width: none !important;
+                width: auto !important;
+                scroll-snap-align: center;
+            }
+            .pricing-grid::-webkit-scrollbar { height: 4px; }
+            .pricing-grid::-webkit-scrollbar-track { background: var(--gray-100); border-radius: 4px; }
+            .pricing-grid::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+            /* Value: stack layout */
+            .value-layout { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+            .value-total-box { padding: 1.5rem 1rem !important; }
+            .value-total-price { font-size: 2rem !important; word-break: break-word; }
+            .value-total-label { font-size: 0.7rem !important; }
+            .value-vs { font-size: 1.5rem !important; }
+            .value-our-price { font-size: 1.8rem !important; word-break: break-word; }
+            .value-table { width: 100% !important; }
+            .value-table td { font-size: 0.85rem !important; padding: 0.7rem 0 !important; }
+
+            /* Testimonials: stack */
+            .testimonials-grid { grid-template-columns: 1fr; }
+
+            /* Chatbot window: full width minus gutters */
+            .chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 140px; }
+
+            /* 3. Comparison table: smaller font on mobile */
+            .comparison-table thead th { font-size: 0.75rem; padding: 1rem 0.6rem; }
+            .comparison-table tbody td { font-size: 0.8rem; padding: 0.75rem 0.6rem; }
+            .comparison-table tfoot td { font-size: 0.85rem; }
+
+            /* 7. Footer: stack vertically */
+            .footer-inner { flex-direction: column; text-align: center; gap: 1.25rem; }
+            .footer-social { justify-content: center; }
+
+            /* 8. Floating buttons: smaller on mobile, proper spacing */
+            .wa-float { width: 50px; height: 50px; bottom: 20px; right: 16px; }
+            .wa-float svg { width: 24px; height: 24px; }
+            .chatbot-toggle { width: 44px; height: 44px; bottom: 80px; right: 16px; font-size: 1.2rem; }
+
+            /* 6. FAQ: full width with proper padding */
+            .faq-list { max-width: 100%; padding: 0; }
+            .faq-question { font-size: 0.9rem; }
+
+            /* Features grid: 1 column */
+            .features-grid { grid-template-columns: 1fr; }
+        }
+
+        /* --- Small phones (480px and below) --- */
+        @media (max-width: 480px) {
+            /* 2. Hero: prevent text overflow on small screens */
+            .hero h1 { font-size: clamp(1.8rem, 8vw, 2.2rem); }
+            .hero p { font-size: 0.95rem; }
+            .hero { padding: 100px 16px 60px; }
+
+            /* 10. Hero buttons: full width stacked */
+            .hero-buttons { flex-direction: column; align-items: stretch; }
+            .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+
+            /* 9. Hero stats: stack vertically on small phones */
+            .hero-stats { flex-direction: column; align-items: center; gap: 1.25rem; }
+
+            /* Problem grid: 1 column */
+            .problem-grid { grid-template-columns: 1fr; }
+
+            /* Benefits list: 1 column */
+            .benefits-list { grid-template-columns: 1fr; }
+
+            /* 10. All CTA buttons full width */
+            .price-btn { font-size: 0.9rem; padding: 0.85rem; }
+            .final-cta-buttons { flex-direction: column; align-items: stretch; }
+            .final-cta-buttons .btn-primary,
+            .final-cta-buttons .btn-secondary { width: 100%; justify-content: center; }
+
+            /* Contact info: stack */
+            .contact-info { flex-direction: column; align-items: center; gap: 1rem; }
+
+            /* Section titles: slightly smaller */
+            .section-title { font-size: clamp(1.6rem, 6vw, 2.5rem); }
+
+            /* 3. Comparison table: even smaller text */
+            .comparison-table { min-width: 600px; }
+            .comparison-table thead th { font-size: 0.7rem; padding: 0.75rem 0.5rem; }
+            .comparison-table tbody td { font-size: 0.75rem; padding: 0.6rem 0.5rem; }
+            .comparison-table tbody td:first-child { padding-left: 0.75rem; }
+            .comparison-table thead th:first-child { padding-left: 0.75rem; }
+            .comparison-table tfoot td { font-size: 0.75rem; }
+
+            /* Value table: smaller on mobile */
+            .value-table td { font-size: 0.8rem; padding: 0.7rem 0; }
+            .value-total-price { font-size: 2rem; }
+            .value-our-price { font-size: 1.6rem; }
+
+            /* Timeline items: smaller text */
+            .timeline-items li { font-size: 0.8rem; }
+            .timeline-month h3 { font-size: 1.1rem; }
+
+            /* Mockup: scale down for small screens */
+            .step-mockup { width: 190px; height: 360px; border-radius: 28px; }
+
+            /* Chatbot window: tighter on small phones */
+            .chatbot-window { width: calc(100vw - 24px); right: 12px; bottom: 130px; max-height: 420px; }
+        }
+
+        /* --- Very small screens (360px and below) --- */
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 1.65rem; }
+            .hero-badge { font-size: 0.65rem; padding: 0.35rem 0.75rem; }
+            .container { padding: 0 16px; }
+            .hero { padding: 90px 12px 50px; }
+            .step-mockup { width: 170px; height: 330px; }
+            .price-card { padding: 2rem 1.5rem; }
+            .price-card-price { font-size: 2rem; }
+        }
+
+        /* ========== VALUE ========== */
+        .value {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--black);
+            overflow: hidden;
+        }
+
+        .value-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .value-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .value-left h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .value-total-box {
+            background: rgba(200,160,78,0.08);
+            border: 1px solid rgba(200,160,78,0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .value-total-label {
+            font-size: 0.8rem;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .value-total-price {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #f87171;
+            text-decoration: line-through;
+            text-decoration-thickness: 3px;
+            margin: 0.5rem 0;
+        }
+
+        .value-vs {
+            font-size: 0.9rem;
+            color: var(--gray-400);
+            margin: 0.75rem 0;
+        }
+
+        .value-our-price {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .value-our-label {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        .value-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .value-table tr {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .value-table td {
+            padding: 0.9rem 0;
+            font-size: 0.9rem;
+        }
+
+        .value-table td:first-child {
+            color: var(--gray-300);
+        }
+
+        .value-table td:last-child {
+            text-align: right;
+            color: var(--gray-500);
+            font-weight: 500;
+            font-family: var(--font-display);
+        }
+
+        .value-service-name {
+            display: block;
+            font-weight: 500;
+        }
+
+        .value-service-alt {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        /* ========== FEATURES ========== */
+        .features {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .features .section-title { color: var(--black); }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid var(--gray-100);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+        }
+
+        .feature-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .feature-card h4 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .feature-card p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            line-height: 1.5;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* ========== LOADER ========== */
+        .loader {
+            position: fixed;
+            inset: 0;
+            background: var(--black);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.6s, visibility 0.6s;
+        }
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader img {
+            height: 40px;
+            animation: loader-pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes loader-pulse {
+            0%, 100% { opacity: 0.4; transform: scale(0.95); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .wa-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 900;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            transition: transform 0.3s var(--ease-spring), box-shadow 0.3s;
+            animation: wa-bounce 2s ease-in-out infinite;
+        }
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+        }
+        .wa-float svg { width: 30px; height: 30px; fill: white; }
+        @keyframes wa-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .wa-float:hover { animation: none; }
+
+        /* ========== CHATBOT ========== */
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 96px;
+            right: 24px;
+            z-index: 900;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(200,160,78,0.3);
+            transition: transform 0.3s var(--ease-spring);
+            font-size: 1.4rem;
+            color: var(--black);
+        }
+        .chatbot-toggle:hover { transform: scale(1.1); }
+
+        .chatbot-window {
+            position: fixed;
+            bottom: 160px;
+            right: 24px;
+            width: 380px;
+            max-height: 500px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            z-index: 901;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chatbot-window.open { display: flex; }
+
+        .chatbot-header {
+            background: var(--black);
+            color: var(--white);
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .chatbot-header-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .chatbot-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+        .chatbot-header-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .chatbot-header-status {
+            font-size: 0.7rem;
+            color: #4ade80;
+        }
+        .chatbot-close {
+            color: var(--gray-400);
+            font-size: 1.2rem;
+            padding: 4px;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-height: 320px;
+            background: #f9f9fb;
+        }
+        .chat-msg {
+            max-width: 85%;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--black);
+        }
+        .chat-msg.bot {
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+        .chat-msg.user {
+            background: var(--black);
+            color: var(--white);
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+        .chat-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .chat-option-btn {
+            padding: 0.4rem 0.8rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 500;
+            background: var(--white);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .chat-option-btn:hover {
+            background: var(--accent);
+            color: var(--black);
+            border-color: var(--accent);
+        }
+        .chatbot-input {
+            display: flex;
+            padding: 0.75rem;
+            border-top: 1px solid var(--gray-100);
+            gap: 0.5rem;
+            background: var(--white);
+        }
+        .chatbot-input input {
+            flex: 1;
+            border: 1px solid var(--gray-200);
+            border-radius: 100px;
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            outline: none;
+            font-family: var(--font-primary);
+        }
+        .chatbot-input input:focus { border-color: var(--accent); }
+        .chatbot-send {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* ========== SOCIAL PROOF ========== */
+        .social-proof {
+            padding: clamp(60px, 8vw, 100px) 0;
+            background: var(--black);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .social-proof-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            background: var(--gray-800);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .testimonial-stars {
+            color: #fbbf24;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        .testimonial-text {
+            font-size: 0.9rem;
+            color: var(--gray-300);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+            font-style: italic;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .testimonial-role {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        /* ========== FAQ ========== */
+        .faq {
+            padding: clamp(80px, 12vw, 160px) 0;
+            background: var(--black);
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+            text-align: left;
+            font-family: var(--font-display);
+        }
+        .faq-question span {
+            transition: transform 0.3s;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        .faq-question.active span { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s var(--ease-out), padding 0.4s;
+        }
+        .faq-answer.open {
+            max-height: 200px;
+            padding-bottom: 1.25rem;
+        }
+        .faq-answer p {
+            font-size: 0.9rem;
+            color: var(--gray-400);
+            line-height: 1.7;
+        }
+
+        /* ========== PHONE MOCKUP ========== */
+        .step-mockup {
+            width: 220px;
+            height: 420px;
+            background: #111;
+            border-radius: 32px;
+            border: 3px solid #333;
+            padding: 12px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .step-mockup-notch {
+            width: 80px;
+            height: 6px;
+            background: #333;
+            border-radius: 10px;
+            margin: 0 auto 8px;
+        }
+        .step-mockup-screen {
+            background: #1a1a2e;
+            border-radius: 20px;
+            height: calc(100% - 14px);
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            overflow: hidden;
+        }
+        .mock-header {
+            text-align: center;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--accent);
+            padding: 4px 0;
+            letter-spacing: 0.1em;
+        }
+        .mock-product {
+            background: rgba(255,255,255,0.06);
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .mock-product-img {
+            width: 36px;
+            height: 36px;
+            background: rgba(200,160,78,0.15);
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .mock-product-info {
+            flex: 1;
+        }
+        .mock-product-name {
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+        .mock-product-price {
+            font-size: 0.55rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .mock-btn {
+            background: var(--accent);
+            color: var(--black);
+            font-size: 0.5rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .mock-cart-bar {
+            margin-top: auto;
+            background: var(--accent);
+            border-radius: 10px;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+        .mock-status-row {
+            display: flex;
+            gap: 4px;
+        }
+        .mock-status {
+            flex: 1;
+            padding: 4px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.45rem;
+            font-weight: 700;
+        }
+        .mock-status.pending { background: #fef3c7; color: #92400e; }
+        .mock-status.confirmed { background: #dbeafe; color: #1e40af; }
+        .mock-status.paid { background: #dcfce7; color: #166534; }
+        .mock-order-card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 8px;
+            padding: 6px 8px;
+        }
+        .mock-order-id {
+            font-size: 0.5rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .mock-order-detail {
+            font-size: 0.45rem;
+            color: var(--gray-400);
+            margin-top: 2px;
+        }
+        .mock-sheet-row {
+            display: flex;
+            gap: 2px;
+        }
+        .mock-sheet-cell {
+            flex: 1;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 3px 4px;
+            font-size: 0.4rem;
+            color: var(--gray-300);
+        }
+        .mock-sheet-header {
+            background: rgba(200,160,78,0.15);
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* ========== PARALLAX ========== */
+        .parallax-section {
+            transform: translateZ(0);
+            will-change: transform;
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+    <img src="assets/logo-dark.png" alt="x(MAX)">
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <a href="/" class="nav-logo">
+        <img src="assets/logo-dark.png" alt="x(MAX)">
+    </a>
+    <ul class="nav-links">
+        <li><a href="#problema">Problema</a></li>
+        <li><a href="#como-funciona">Producto</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#marketing">Marketing</a></li>
+        <li><a href="#comparacion">Comparación</a></li>
+        <li><a href="#contacto" class="nav-cta">Empezar</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#problema" onclick="closeMobile()">Problema</a>
+    <a href="#como-funciona" onclick="closeMobile()">Producto</a>
+    <a href="#planes" onclick="closeMobile()">Planes</a>
+    <a href="#marketing" onclick="closeMobile()">Marketing</a>
+    <a href="#comparacion" onclick="closeMobile()">Comparación</a>
+    <a href="#contacto" onclick="closeMobile()">Empezar</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+        <div class="hero-badge reveal">
+            <span class="hero-badge-dot"></span>
+            Sistema inteligente para negocios
+        </div>
+        <h1 class="reveal reveal-delay-1">
+            Tu negocio vendiendo<br>
+            <span class="highlight">24/7</span> mientras<br>
+            tú descansas.
+        </h1>
+        <p class="reveal reveal-delay-2">
+            Pedidos, CRM, chatbot y marketing digital. Todo en un solo ecosistema
+            para que vendas más sin trabajar más.
+        </p>
+        <div class="hero-buttons reveal reveal-delay-3">
+            <a href="https://wa.me/573001620966?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20x(MAX)" class="btn-primary" target="_blank">
+                Quiero vender más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#como-funciona" class="btn-secondary">Ver como funciona</a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+            <div>
+                <div class="hero-stat-number">24/7</div>
+                <div class="hero-stat-label">Chatbot activo</div>
+            </div>
+            <div>
+                <div class="hero-stat-number">80%</div>
+                <div class="hero-stat-label">Menos tiempo perdido</div>
+            </div>
+            <div>
+                <div class="hero-stat-number">90d</div>
+                <div class="hero-stat-label">Onboarding incluido</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" id="problema">
+    <div class="container">
+        <div class="problem-header">
+            <div class="section-label reveal">El problema</div>
+            <h2 class="section-title reveal reveal-delay-1">El caos que vive<br>tu negocio hoy</h2>
+        </div>
+        <div class="problem-grid">
+            <div class="problem-card reveal">
+                <div class="problem-icon">&#9201;</div>
+                <h3>Tiempo perdido</h3>
+                <p>4+ horas al día respondiendo las mismas preguntas sobre precios y disponibilidad.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-1">
+                <div class="problem-icon" style="background:#fef3c7">&#128176;</div>
+                <h3>Ventas perdidas</h3>
+                <p>Clientes que escriben y no reciben respuesta rápida. Se van con la competencia.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-2">
+                <div class="problem-icon" style="background:#fce7f3">&#9888;&#65039;</div>
+                <h3>Errores manuales</h3>
+                <p>Direcciones mal anotadas, fechas olvidadas, pedidos confundidos.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-3">
+                <div class="problem-icon" style="background:#e0e7ff">&#128202;</div>
+                <h3>Cero control</h3>
+                <p>No sabes cuánto vendiste, quién te compró ni qué producto es el más popular.</p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="problem-icon" style="background:#fef9c3">&#128561;</div>
+                <h3>Clientes de madrugada</h3>
+                <p>Te escriben a las 11pm o a las 5am. Si no respondes al instante, pierdes la venta.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-1">
+                <div class="problem-icon" style="background:#d1fae5">&#128209;</div>
+                <h3>Cuadernos y libretas</h3>
+                <p>Apuntas pedidos en papeles que se pierden. No hay historial, no hay organización.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-2">
+                <div class="problem-icon" style="background:#ede9fe">&#128694;</div>
+                <h3>No tienes presencia digital</h3>
+                <p>No tienes catálogo, no tienes redes activas. Solo dependes del voz a voz.</p>
+            </div>
+            <div class="problem-card reveal reveal-delay-3">
+                <div class="problem-icon" style="background:#fee2e2">&#128548;</div>
+                <h3>Vendes lo que no tienes</h3>
+                <p>Confirmas un pedido y después descubres que se acabó el producto. Mala experiencia.</p>
+            </div>
+            <div class="problem-card reveal">
+                <div class="problem-icon" style="background:#cffafe">&#128591;</div>
+                <h3>Cobrar es incómodo</h3>
+                <p>Te toca recordarle al cliente que pague. No tienes un sistema claro de confirmación.</p>
+            </div>
+        </div>
+        <div class="problem-stat reveal">
+            <p>El <strong>68%</strong> de los clientes no vuelven a escribir si no les respondes en <strong>5 minutos</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="como-funciona">
+    <div class="container">
+        <div class="how-header">
+            <div class="section-label reveal">Cómo funciona</div>
+            <h2 class="section-title reveal reveal-delay-1">Simple. Automático.<br>Poderoso.</h2>
+            <p class="section-subtitle reveal reveal-delay-2" style="margin: 1rem auto 0">De un link a una venta en minutos. Sin descargas, sin complicaciones.</p>
+        </div>
+
+        <div class="steps">
+            <!-- Step 1 -->
+            <div class="step reveal">
+                <div class="step-content">
+                    <div class="step-number">01</div>
+                    <h3>Tu cliente ve el catálogo</h3>
+                    <p>Un link en tu bio o un mensaje directo. Tu cliente explora tus productos desde su celular sin descargar nada.</p>
+                    <ul class="step-features">
+                        <li>Fotos reales y precios actualizados</li>
+                        <li>Stock conectado en tiempo real</li>
+                        <li>Funciona en cualquier dispositivo</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="step-mockup float-anim">
+                        <div class="step-mockup-notch"></div>
+                        <div class="step-mockup-screen">
+                            <div class="mock-header">x(MAX) TIENDA</div>
+                            <div class="mock-product"><div class="mock-product-img"></div><div class="mock-product-info"><div class="mock-product-name">Desayuno Ejecutivo</div><div class="mock-product-price">$85.000</div></div><div class="mock-btn">Agregar</div></div>
+                            <div class="mock-product"><div class="mock-product-img"></div><div class="mock-product-info"><div class="mock-product-name">Ancheta Premium</div><div class="mock-product-price">$120.000</div></div><div class="mock-btn">Agregar</div></div>
+                            <div class="mock-product"><div class="mock-product-img"></div><div class="mock-product-info"><div class="mock-product-name">Combo Romántico</div><div class="mock-product-price">$95.000</div></div><div class="mock-btn">Agregar</div></div>
+                            <div class="mock-cart-bar">Ver carrito (2)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step reveal">
+                <div class="step-content">
+                    <div class="step-number">02</div>
+                    <h3>Hace su pedido</h3>
+                    <p>Agrega productos al carrito, llena sus datos y elige cómo pagar. Confirmación automática por WhatsApp.</p>
+                    <ul class="step-features">
+                        <li>Carrito inteligente con opciones</li>
+                        <li>Bancolombia, Nequi, Daviplata</li>
+                        <li>Confirmación directa por WhatsApp</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="step-mockup float-anim" style="animation-delay: -2s">
+                        <div class="step-mockup-notch"></div>
+                        <div class="step-mockup-screen">
+                            <div class="mock-header">CHECKOUT</div>
+                            <div class="mock-order-card"><div class="mock-order-id">Desayuno Ejecutivo x1</div><div class="mock-order-detail">Nota: Sin gluten, con tarjeta</div></div>
+                            <div class="mock-order-card"><div class="mock-order-id">Ancheta Premium x1</div><div class="mock-order-detail">Color: Rosa dorado</div></div>
+                            <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:6px;margin-top:4px"><div style="font-size:0.5rem;color:var(--gray-400)">Total</div><div style="font-size:0.8rem;font-weight:700;color:var(--accent)">$205.000</div></div>
+                            <div class="mock-order-card" style="border:1px solid var(--accent)"><div class="mock-order-id">Método de pago</div><div class="mock-order-detail">Nequi - Bancolombia - Daviplata</div></div>
+                            <div class="mock-cart-bar">Confirmar pedido por WhatsApp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step reveal">
+                <div class="step-content">
+                    <div class="step-number">03</div>
+                    <h3>Tú gestionas desde el panel</h3>
+                    <p>Ve todos tus pedidos, confirma pagos, actualiza estados. Todo desde un panel admin simple y poderoso.</p>
+                    <ul class="step-features">
+                        <li>Pendiente, Confirmado, Pagado</li>
+                        <li>CRM automático con datos de clientes</li>
+                        <li>Agenda + resumen diario por email</li>
+                    </ul>
+                </div>
+                <div class="step-visual">
+                    <div class="step-mockup float-anim" style="animation-delay: -4s">
+                        <div class="step-mockup-notch"></div>
+                        <div class="step-mockup-screen">
+                            <div class="mock-header">PANEL ADMIN</div>
+                            <div class="mock-status-row"><div class="mock-status pending">Pendiente</div><div class="mock-status confirmed">Confirmado</div><div class="mock-status paid">Pagado</div></div>
+                            <div class="mock-order-card"><div class="mock-order-id">#0047 - María López</div><div class="mock-order-detail">Desayuno Ejecutivo - $85.000 - Pagado</div></div>
+                            <div class="mock-order-card"><div class="mock-order-id">#0048 - Carlos Ruiz</div><div class="mock-order-detail">Ancheta Premium - $120.000 - Pendiente</div></div>
+                            <div class="mock-order-card"><div class="mock-order-id">#0049 - Ana Gómez</div><div class="mock-order-detail">Combo Romántico - $95.000 - Confirmado</div></div>
+                            <div style="margin-top:auto;background:rgba(200,160,78,0.1);border-radius:8px;padding:6px;text-align:center"><div style="font-size:0.5rem;color:var(--gray-400)">Ventas hoy</div><div style="font-size:0.75rem;font-weight:700;color:var(--accent)">$300.000</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="beneficios">
+    <div class="container">
+        <div class="benefits-header">
+            <div class="section-label reveal">Resultados</div>
+            <h2 class="section-title reveal reveal-delay-1">Lo que tu negocio gana</h2>
+        </div>
+        <div class="benefits-top">
+            <div class="benefit-stat-card reveal">
+                <div class="benefit-big-number" data-count="80" data-suffix="%" data-prefix="">0%</div>
+                <h3>Menos tiempo</h3>
+                <p>respondiendo preguntas</p>
+            </div>
+            <div class="benefit-stat-card reveal reveal-delay-1">
+                <div class="benefit-big-number" data-count="20" data-suffix="+" data-prefix="">0+</div>
+                <h3>Pedidos simultáneos</h3>
+                <p>sin perder ninguno</p>
+            </div>
+            <div class="benefit-stat-card reveal reveal-delay-2">
+                <div class="benefit-big-number">24/7</div>
+                <h3>Chatbot + catálogo</h3>
+                <p>siempre disponibles</p>
+            </div>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item reveal">
+                <div class="benefit-check">&#10003;</div>
+                <p>Chatbot inteligente que responde precios y arma pedidos</p>
+            </div>
+            <div class="benefit-item reveal reveal-delay-1">
+                <div class="benefit-check">&#10003;</div>
+                <p>Stock actualizado en tiempo real conectado al catálogo</p>
+            </div>
+            <div class="benefit-item reveal reveal-delay-2">
+                <div class="benefit-check">&#10003;</div>
+                <p>Base de datos de clientes para remarketing</p>
+            </div>
+            <div class="benefit-item reveal">
+                <div class="benefit-check">&#10003;</div>
+                <p>Agenda automática con dirección para el repartidor</p>
+            </div>
+            <div class="benefit-item reveal reveal-delay-1">
+                <div class="benefit-check">&#10003;</div>
+                <p>Control real de cuánto vendiste cada semana</p>
+            </div>
+            <div class="benefit-item reveal reveal-delay-2">
+                <div class="benefit-check">&#10003;</div>
+                <p>Resumen diario por email con estado de pedidos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison">
+    <div class="container">
+        <div class="comparison-header">
+            <div class="section-label reveal">Comparación</div>
+            <h2 class="section-title reveal reveal-delay-1">x(MAX) vs la competencia</h2>
+        </div>
+        <div class="comparison-table-wrapper reveal reveal-delay-2">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Funcionalidad</th>
+                        <th class="highlight-col">x(MAX)</th>
+                        <th>Whataform</th>
+                        <th>Catálogos</th>
+                        <th>CRMs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Catálogo digital</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td></tr>
+                    <tr><td>Pedidos por WhatsApp</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="partial">~</span></td></tr>
+                    <tr><td>Chatbot con IA 24/7</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="partial">~</span></td></tr>
+                    <tr><td>CRM automático</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td></tr>
+                    <tr><td>Stock en tiempo real</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="partial">~</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td></tr>
+                    <tr><td>Google Calendar</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td></tr>
+                    <tr><td>Resumen diario por email</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td></tr>
+                    <tr><td>Marketing + Onboarding 90d</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td></tr>
+                    <tr><td>Sin suscripción mensual</td><td class="highlight-col"><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td><td><span class="partial">~</span></td><td><span class="cross">&#10007;</span></td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Precio</td>
+                        <td class="highlight-col">Desde $50 USD</td>
+                        <td>$10-30 USD/mes</td>
+                        <td>$0-15 USD/mes</td>
+                        <td>$25+ USD/mes</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="planes">
+    <div class="container">
+        <div class="pricing-header">
+            <div class="section-label reveal">Planes</div>
+            <h2 class="section-title reveal reveal-delay-1">Elige tu plan</h2>
+            <p class="section-subtitle reveal reveal-delay-2">Cobro por producto. Todos incluyen onboarding 90 días.</p>
+        </div>
+        <div class="pricing-grid">
+            <!-- Impulso (primero en mobile) -->
+            <div class="price-card featured reveal">
+                <div class="price-badge">RECOMENDADO</div>
+                <div class="price-card-name">Impulso</div>
+                <div class="price-card-price">$75</div>
+                <div class="price-card-period">montaje único USD</div>
+                <div class="price-card-commission">
+                    <strong>2%</strong>
+                    <span>del valor / producto vendido</span>
+                </div>
+                <ul class="price-features">
+                    <li>Todo lo del Plan Básico</li>
+                    <li>Fotos profesionales</li>
+                    <li>Creación de redes sociales</li>
+                    <li>Guía de contenido + 1 a 3 videos</li>
+                </ul>
+                <a href="plan-impulso.html" class="price-btn price-btn-light">Empezar con Impulso</a>
+            </div>
+
+            <!-- Básico -->
+            <div class="price-card reveal reveal-delay-1">
+                <div class="price-card-name">Básico</div>
+                <div class="price-card-price">$50</div>
+                <div class="price-card-period">montaje único USD</div>
+                <div class="price-card-commission">
+                    <strong>2%</strong>
+                    <span>del valor / producto vendido</span>
+                </div>
+                <ul class="price-features">
+                    <li>App + CRM + Agenda + Soporte</li>
+                    <li>Catálogo + Chatbot 24/7</li>
+                    <li>Onboarding 90 días</li>
+                    <li>Compromiso mínimo 3 meses</li>
+                </ul>
+                <a href="plan-basico.html" class="price-btn price-btn-dark">Empezar con Básico</a>
+            </div>
+
+            <!-- Pro -->
+            <div class="price-card reveal reveal-delay-2">
+                <div class="price-card-name">Pro</div>
+                <div class="price-card-price">$150-$250</div>
+                <div class="price-card-period">montaje USD</div>
+                <div class="price-card-commission">
+                    <strong>2%</strong>
+                    <span>del valor / producto vendido</span>
+                </div>
+                <ul class="price-features">
+                    <li>Todo lo del Plan Impulso</li>
+                    <li>Marketing activo 90 días</li>
+                    <li>Pauta digital incluida (mes 1)</li>
+                    <li>Optimización semanal + reportes</li>
+                </ul>
+                <a href="plan-pro.html" class="price-btn price-btn-dark">Empezar con Pro</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+    <div class="container">
+        <div class="timeline-header">
+            <div class="section-label reveal">Tu primer trimestre</div>
+            <h2 class="section-title reveal reveal-delay-1">90 días de onboarding<br>incluidos</h2>
+        </div>
+        <div class="timeline-track">
+            <div class="timeline-month reveal">
+                <div class="timeline-month-label">Mes 1</div>
+                <div class="timeline-dot"></div>
+                <h3>Fundación</h3>
+                <ul class="timeline-items">
+                    <li>Fotos profesionales de productos</li>
+                    <li>Catálogo digital + chatbot 24/7</li>
+                    <li>Cuentas en Instagram y TikTok</li>
+                    <li>Montaje del ecosistema completo</li>
+                </ul>
+            </div>
+            <div class="timeline-month reveal reveal-delay-1">
+                <div class="timeline-month-label">Mes 2</div>
+                <div class="timeline-dot"></div>
+                <h3>Contenido</h3>
+                <ul class="timeline-items">
+                    <li>Guía personalizada de contenido</li>
+                    <li>Creación de 1 a 3 videos</li>
+                    <li>Entrenamiento para grabar</li>
+                    <li>Stock conectado al catálogo</li>
+                </ul>
+            </div>
+            <div class="timeline-month reveal reveal-delay-2">
+                <div class="timeline-month-label">Mes 3</div>
+                <div class="timeline-dot"></div>
+                <h3>Tracción</h3>
+                <ul class="timeline-items">
+                    <li>Pedidos reales entrando</li>
+                    <li>Redes sociales con contenido</li>
+                    <li>CRM con datos de clientes</li>
+                    <li>Resultados: antes vs despues</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-cta reveal">
+            <p><strong>Día 91+</strong> &mdash; Tu negocio ya tiene presencia digital y datos reales. ¿Quieres escalar? Activa el marketing de pago.</p>
+        </div>
+    </div>
+</section>
+
+<!-- MARKETING DIGITAL -->
+<section class="marketing" id="marketing">
+    <div class="container">
+        <div class="section-label reveal" style="text-align:center;">Marketing Digital</div>
+        <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Escala tu negocio con pauta</h2>
+        <p class="marketing-subtitle reveal reveal-delay-2">Meta Ads o Google Ads conectados al ecosistema x(MAX).</p>
+        <p class="marketing-note-top reveal reveal-delay-2">Disponible después de los 90 días de onboarding.</p>
+
+        <div class="marketing-grid">
+            <!-- Básico -->
+            <div class="mkt-card reveal">
+                <div class="mkt-card-name">Básico</div>
+                <div class="mkt-card-price">$65 — $90</div>
+                <div class="mkt-card-period">USD / mes &middot; Tu pago de gestión</div>
+
+                <div class="mkt-section-label">x(MAX) hace:</div>
+                <ul class="mkt-features">
+                    <li>Configuración de Meta Ads o Google Ads</li>
+                    <li>Diseño de 2–3 anuncios iniciales</li>
+                    <li>Campaña de búsqueda o social</li>
+                    <li>Reporte mensual de resultados</li>
+                </ul>
+
+                <div class="mkt-client-label">El cliente pone:</div>
+                <p class="mkt-client-note">Pauta desde $80 USD/mes directo a Meta o Google</p>
+
+                <div class="mkt-result">Resultado: 20–80 clientes nuevos viendo tu catálogo/mes</div>
+            </div>
+
+            <!-- Pro -->
+            <div class="mkt-card mkt-featured reveal reveal-delay-1">
+                <div class="mkt-card-badge">PRO</div>
+                <div class="mkt-card-name">Pro</div>
+                <div class="mkt-card-price">$105 — $130</div>
+                <div class="mkt-card-period">USD / mes &middot; Tu pago de gestión</div>
+
+                <div class="mkt-section-label">x(MAX) hace:</div>
+                <ul class="mkt-features">
+                    <li>Gestión activa semanal Meta Ads o Google Ads</li>
+                    <li>Google Ads: búsqueda + Google Maps</li>
+                    <li>Guía de contenido TikTok/Reels</li>
+                    <li>Optimización semanal + reporte detallado</li>
+                </ul>
+
+                <div class="mkt-client-label">El cliente pone:</div>
+                <p class="mkt-client-note">Pauta desde $160 USD/mes directo a Meta o Google</p>
+
+                <div class="mkt-result">Funnel completo: anuncio &rarr; catálogo &rarr; chatbot &rarr; pedido &rarr; CRM</div>
+            </div>
+        </div>
+
+        <div class="mkt-disclaimer reveal">La pauta va directo a Meta o Google, no pasa por x(MAX). Tu pago es solo por la gestión profesional.</div>
+
+        <div class="mkt-choose reveal">
+            <a href="https://wa.me/573001620966?text=Hola%2C%20quiero%20información%20sobre%20marketing%20digital%20con%20x(MAX)" class="btn-primary" target="_blank">
+                Quiero escalar mi negocio
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE COMPARISON -->
+<section class="value">
+    <div class="container">
+        <div class="value-header">
+            <div class="section-label reveal">Valor real</div>
+            <h2 class="section-title reveal reveal-delay-1">Lo que ofrecemos vs<br>lo que cobramos</h2>
+        </div>
+        <div class="value-layout">
+            <div class="value-left reveal">
+                <h3>Si compraras todo<br>por separado:</h3>
+                <table class="value-table">
+                    <tr>
+                        <td>
+                            <span class="value-service-name">Tienda web</span>
+                            <span class="value-service-alt">Tiendanube, Shopify</span>
+                        </td>
+                        <td>$30-80 USD/mes</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="value-service-name">CRM</span>
+                            <span class="value-service-alt">HubSpot, Zoho</span>
+                        </td>
+                        <td>$15-50 USD/mes</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="value-service-name">Chatbot IA</span>
+                            <span class="value-service-alt">Whapify, Wati</span>
+                        </td>
+                        <td>$50 USD/mes</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="value-service-name">Email marketing</span>
+                            <span class="value-service-alt">Mailchimp</span>
+                        </td>
+                        <td>$15-30 USD/mes</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="value-service-name">Google Calendar integrado</span>
+                        </td>
+                        <td>No existe</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="value-service-name">Control de stock</span>
+                            <span class="value-service-alt">ERP ~$50 USD/mes</span>
+                        </td>
+                        <td>~$50 USD/mes</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="value-total-box reveal reveal-delay-1">
+                <div class="value-total-label">Total si compras todo separado</div>
+                <div class="value-total-price">$160-260 USD/mes</div>
+                <div class="value-vs">Con x(MAX) todo incluido desde</div>
+                <div class="value-our-price">$50 USD</div>
+                <div class="value-our-label">montaje único + 2% por producto</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="container">
+        <div class="features-header">
+            <div class="section-label reveal">Todo incluido</div>
+            <h2 class="section-title reveal reveal-delay-1">Todo lo que necesitas en un solo lugar</h2>
+            <p class="section-subtitle reveal reveal-delay-2" style="margin: 0.75rem auto 0; color: var(--gray-500);">Cada herramienta diseñada para que vendas más con menos esfuerzo.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128241;</div>
+                <div>
+                    <h4>Catálogo digital</h4>
+                    <p>Tu tienda en el celular del cliente. Sin descargas, abre como una app.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128722;</div>
+                <div>
+                    <h4>Carrito + Checkout</h4>
+                    <p>Tu cliente arma su pedido, personaliza y paga. Fácil como comprar en línea.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128172;</div>
+                <div>
+                    <h4>WhatsApp integrado</h4>
+                    <p>Cada pedido llega directo a tu WhatsApp. Sin intermediarios.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#9881;&#65039;</div>
+                <div>
+                    <h4>Panel de control</h4>
+                    <p>Ve todos tus pedidos en un solo lugar. Confirma, gestiona y cobra fácil.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128203;</div>
+                <div>
+                    <h4>CRM automático</h4>
+                    <p>Historial completo de cada cliente: qué compró, cuándo y cuánto gastó.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128197;</div>
+                <div>
+                    <h4>Agenda de entregas</h4>
+                    <p>Cada pedido se agenda automáticamente con dirección, fecha y hora.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128230;</div>
+                <div>
+                    <h4>Control de inventario</h4>
+                    <p>Tu stock se actualiza solo. Lo que no hay, no se muestra. Cero ventas en vacío.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128231;</div>
+                <div>
+                    <h4>Resumen diario</h4>
+                    <p>Cada mañana recibes un email con las entregas del día y pedidos pendientes.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#129302;</div>
+                <div>
+                    <h4>Chatbot con IA</h4>
+                    <p>Un asistente que responde precios, disponibilidad y toma pedidos 24/7 por ti.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128200;</div>
+                <div>
+                    <h4>Métricas de tu negocio</h4>
+                    <p>Google Analytics integrado. Sabes cuántos ven tu catálogo, de dónde vienen y qué compran.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#128248;</div>
+                <div>
+                    <h4>Fotos profesionales</h4>
+                    <p>Te tomamos fotos de tus productos para que tu catálogo se vea irresistible.</p>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-card-icon">&#127916;</div>
+                <div>
+                    <h4>Contenido para redes</h4>
+                    <p>Te guiamos y creamos contenido para Instagram y TikTok. Tu marca con presencia real.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF - Early Adopters CTA -->
+<section class="social-proof" id="early-adopters">
+    <div class="container">
+        <div class="social-proof-header">
+            <div class="section-label reveal">Primeros clientes</div>
+            <h2 class="section-title reveal reveal-delay-1">Sé de los primeros en transformar tu negocio</h2>
+        </div>
+        <div class="early-adopter-cta reveal reveal-delay-2">
+            <div class="early-adopter-card">
+                <div class="early-adopter-icon">&#127942;</div>
+                <h3>Beneficios exclusivos para early adopters</h3>
+                <ul class="early-adopter-list">
+                    <li>&#10003; Precio preferencial de lanzamiento</li>
+                    <li>&#10003; Onboarding personalizado 1 a 1</li>
+                    <li>&#10003; Soporte prioritario de por vida</li>
+                    <li>&#10003; Tu feedback moldea el producto</li>
+                </ul>
+                <a href="https://wa.me/573001620966?text=Hola%2C%20quiero%20ser%20de%20los%20primeros%20en%20usar%20x(MAX)" class="btn-primary" target="_blank" style="margin-top: 1.5rem; display: inline-flex;">
+                    Quiero ser de los primeros
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+    <div class="container">
+        <div class="why-header">
+            <div class="section-label reveal">Diferencial</div>
+            <h2 class="section-title reveal reveal-delay-1">Por que x(MAX)?</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="why-card-icon">&#128640;</div>
+                <h3>No solo marketing</h3>
+                <p>Las agencias traen mensajes pero te dejan solo atendiendo el caos. x(MAX) trae los clientes Y te da chatbot + CRM + agenda para atenderlos.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-1">
+                <div class="why-card-icon">&#128279;</div>
+                <h3>Un solo link para todo</h3>
+                <p>Pedidos, CRM, agenda, stock y marketing en un solo ecosistema. No necesitas 5 herramientas diferentes.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-2">
+                <div class="why-card-icon">&#128230;</div>
+                <h3>Stock conectado al catálogo</h3>
+                <p>Lo que no hay, no se muestra. Cero ventas de productos agotados. Inventario actualizado en tiempo real.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-3">
+                <div class="why-card-icon">&#129309;</div>
+                <h3>90 días codo a codo contigo</h3>
+                <p>No es un software que te dejan y desaparecen. Fotos, videos, redes, contenido: te construimos todo desde cero.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <div class="container">
+        <div class="faq-header">
+            <div class="section-label reveal">Preguntas frecuentes</div>
+            <h2 class="section-title reveal reveal-delay-1">¿Tienes dudas?</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Necesito saber de tecnología para usar x(MAX)?<span>+</span></button>
+                <div class="faq-answer"><p>No. Nosotros montamos todo por ti. Tú solo necesitas tu celular para gestionar pedidos desde el panel admin. Te entrenamos durante los 90 días de onboarding.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Qué pasa después de los 90 días?<span>+</span></button>
+                <div class="faq-answer"><p>Tu negocio ya tiene presencia digital completa. Seguimos dando soporte técnico. Si quieres escalar, puedes activar el marketing de pago con nuestros planes de pauta digital.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Hay algún cobro mensual fijo?<span>+</span></button>
+                <div class="faq-answer"><p>No. Solo pagas el montaje inicial y una comisión por producto vendido. Si no vendes, no pagas. Cero riesgo para ti.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Funciona para mi tipo de negocio?<span>+</span></button>
+                <div class="faq-answer"><p>x(MAX) funciona para cualquier negocio que venda productos: desayunos, anchetas, postres, ropa, artesanías, comida, y más. Si vendes algo, x(MAX) te ayuda a vender más.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Puedo cancelar en cualquier momento?<span>+</span></button>
+                <div class="faq-answer"><p>El compromiso mínimo es de 3 meses para que puedas ver resultados reales. Después de ese período, puedes continuar o cancelar sin penalidades.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">¿Qué incluye el chatbot con IA?<span>+</span></button>
+                <div class="faq-answer"><p>Un bot inteligente que responde automáticamente preguntas sobre precios, disponibilidad y puede armar pedidos directamente. Funciona 24/7 sin que tú tengas que estar pendiente.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contacto">
+    <div class="final-cta-bg"></div>
+    <div class="container">
+        <h2 class="reveal">Empecemos<br><span style="background: var(--gradient-accent); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">hoy.</span></h2>
+        <p class="reveal reveal-delay-1">Tu negocio merece trabajar de forma inteligente. Déjame mostrarte cómo.</p>
+        <div class="final-cta-buttons reveal reveal-delay-2">
+            <a href="https://wa.me/573001620966?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20x(MAX)" class="btn-primary" target="_blank">
+                Escríbenos por WhatsApp
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="mailto:somos.xmax@gmail.com" class="btn-secondary">Enviar email</a>
+        </div>
+        <div class="contact-info reveal reveal-delay-3">
+            <a href="tel:+573001620966" class="contact-item">
+                <div class="contact-icon">&#128222;</div>
+                300 162 0966
+            </a>
+            <a href="mailto:somos.xmax@gmail.com" class="contact-item">
+                <div class="contact-icon">&#9993;</div>
+                somos.xmax@gmail.com
+            </a>
+            <a href="https://www.instagram.com/somoxmax/" target="_blank" class="contact-item">
+                <div class="contact-icon">&#128247;</div>
+                @somoxmax
+            </a>
+        </div>
+
+        <div class="form-divider reveal">o déjanos tus datos</div>
+
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html" class="contact-form reveal">
+            <input type="hidden" name="form-name" value="contacto">
+            <p style="display:none"><label>No llenar: <input name="bot-field"></label></p>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">WhatsApp</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300..." required>
+                </div>
+            </div>
+            <div class="form-group full">
+                <label for="negocio">¿Qué vendes?</label>
+                <input type="text" id="negocio" name="negocio" placeholder="Ej: Desayunos, ropa, postres...">
+            </div>
+            <div class="form-group full">
+                <label for="mensaje">Mensaje (opcional)</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu negocio..."></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="/" class="footer-logo">
+                <img src="assets/logo-dark.png" alt="x(MAX)">
+            </a>
+            <span class="footer-copy">&copy; 2026 x(MAX) &middot; PORMAX &middot; Ir por mucho más &middot; <a href="privacidad.html" style="color:var(--gray-400);text-decoration:underline;">Política de privacidad</a></span>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61578468688463" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/somoxmax/" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/573001620966?text=Hola%2C%20quiero%20conocer%20más%20sobre%20x(MAX)" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- CHATBOT -->
+<button class="chatbot-toggle" id="chatbotToggle" aria-label="Chat con x(MAX)">&#128172;</button>
+<div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+        <div class="chatbot-header-info">
+            <div>
+                <div class="chatbot-header-name">Mr. MAX</div>
+                <div class="chatbot-header-status">En línea</div>
+            </div>
+        </div>
+        <button class="chatbot-close" id="chatbotClose">&#10005;</button>
+    </div>
+    <div class="chatbot-messages" id="chatMessages">
+        <div class="chat-msg bot">
+            ¡Hola! Soy Mr. MAX. ¿En qué te puedo ayudar?
+            <div class="chat-options">
+                <button class="chat-option-btn" onclick="chatAnswer('planes')">Ver planes</button>
+                <button class="chat-option-btn" onclick="chatAnswer('funciona')">¿Cómo funciona?</button>
+                <button class="chat-option-btn" onclick="chatAnswer('precio')">¿Cuánto cuesta?</button>
+                <button class="chat-option-btn" onclick="chatAnswer('demo')">Quiero una demo</button>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" id="chatInput" placeholder="Escribe tu pregunta..." onkeypress="if(event.key==='Enter')sendChat()">
+        <button class="chatbot-send" onclick="sendChat()">&#10148;</button>
+    </div>
+</div>
+
+<script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const spans = hamburger.querySelectorAll('span');
+        if (mobileMenu.classList.contains('open')) {
+            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        } else {
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '';
+            spans[2].style.transform = '';
+        }
+    });
+
+    function closeMobile() {
+        mobileMenu.classList.remove('open');
+        const spans = hamburger.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Nav background on scroll + parallax
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('nav');
+        if (window.scrollY > 50) {
+            nav.style.background = 'rgba(10, 10, 10, 0.95)';
+        } else {
+            nav.style.background = 'rgba(10, 10, 10, 0.8)';
+        }
+        // Parallax on hero
+        const hero = document.querySelector('.hero-content');
+        if (hero) {
+            const scrolled = window.scrollY;
+            hero.style.transform = `translateY(${scrolled * 0.15}px)`;
+            hero.style.opacity = 1 - (scrolled * 0.001);
+        }
+    });
+
+    // Loader
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('loader').classList.add('hidden');
+        }, 800);
+    });
+
+    // Counter animation
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.dataset.count);
+                const suffix = el.dataset.suffix || '';
+                const prefix = el.dataset.prefix || '';
+                let current = 0;
+                const step = Math.ceil(target / 40);
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = prefix + current + suffix;
+                }, 30);
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+    // FAQ
+    function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+        if (!isOpen) {
+            answer.classList.add('open');
+            btn.classList.add('active');
+        }
+    }
+
+    // Chatbot
+    const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const chatbotClose = document.getElementById('chatbotClose');
+
+    chatbotToggle.addEventListener('click', () => {
+        chatbotWindow.classList.toggle('open');
+    });
+    chatbotClose.addEventListener('click', () => {
+        chatbotWindow.classList.remove('open');
+    });
+
+    const botResponses = {
+        'planes': '¡Tenemos 3 planes!\n\n<b>Básico:</b> $50 USD montaje + 2% por producto\n<b>Impulso:</b> $75 USD montaje + 2% por producto (RECOMENDADO)\n<b>Pro:</b> $150-$250 USD + 2% + marketing incluido\n\nTodos incluyen 90 días de onboarding. ¿Te interesa alguno?',
+        'funciona': '¡Súper fácil! En 3 pasos:\n\n1. Tu cliente ve tu catálogo digital (un simple link)\n2. Hace su pedido y paga\n3. Tú gestionas todo desde el panel admin\n\nIncluye chatbot 24/7, CRM y agenda automática.',
+        'precio': 'El montaje empieza desde <b>$50 USD</b> (pago único). No hay suscripción mensual.\n\nSolo pagas 2% de comisión por producto vendido. Si no vendes, no pagas. ¿Quieres más detalles?',
+        'demo': '¡Claro! Te podemos mostrar cómo funciona todo el ecosistema. Escríbenos por WhatsApp al <b>300 162 0966</b> y agendamos una demo personalizada para tu negocio.',
+    };
+
+    function chatAnswer(key) {
+        const msgs = document.getElementById('chatMessages');
+        // User message
+        const labels = {planes:'Ver planes', funciona:'¿Cómo funciona?', precio:'¿Cuánto cuesta?', demo:'Quiero una demo'};
+        const userDiv = document.createElement('div');
+        userDiv.className = 'chat-msg user';
+        userDiv.textContent = labels[key] || key;
+        msgs.appendChild(userDiv);
+        // Bot typing
+        setTimeout(() => {
+            const botDiv = document.createElement('div');
+            botDiv.className = 'chat-msg bot';
+            botDiv.innerHTML = botResponses[key] || 'Interesante pregunta. Para darte la mejor respuesta, escríbenos por WhatsApp al <b>300 162 0966</b>.';
+            // Add WhatsApp button
+            const waBtn = document.createElement('div');
+            waBtn.style.marginTop = '0.75rem';
+            waBtn.innerHTML = '<a href="https://wa.me/573001620966?text=Hola%2C%20vengo%20del%20chatbot%20de%20la%20web" target="_blank" style="display:inline-block;padding:0.4rem 1rem;background:#25d366;color:white;border-radius:100px;font-size:0.8rem;font-weight:600;">Hablar por WhatsApp</a>';
+            botDiv.appendChild(waBtn);
+            msgs.appendChild(botDiv);
+            msgs.scrollTop = msgs.scrollHeight;
+        }, 600);
+        msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    function sendChat() {
+        const input = document.getElementById('chatInput');
+        const text = input.value.trim();
+        if (!text) return;
+        input.value = '';
+        const msgs = document.getElementById('chatMessages');
+        const userDiv = document.createElement('div');
+        userDiv.className = 'chat-msg user';
+        userDiv.textContent = text;
+        msgs.appendChild(userDiv);
+
+        const lower = text.toLowerCase();
+        let key = null;
+        if (lower.includes('plan') || lower.includes('precio') || lower.includes('cuesta') || lower.includes('valor') || lower.includes('costo')) key = 'precio';
+        else if (lower.includes('funciona') || lower.includes('como') || lower.includes('qué es') || lower.includes('que es')) key = 'funciona';
+        else if (lower.includes('demo') || lower.includes('mostrar') || lower.includes('ver')) key = 'demo';
+        else if (lower.includes('básico') || lower.includes('basico') || lower.includes('impulso') || lower.includes('pro')) key = 'planes';
+
+        setTimeout(() => {
+            const botDiv = document.createElement('div');
+            botDiv.className = 'chat-msg bot';
+            if (key) {
+                botDiv.innerHTML = botResponses[key];
+            } else {
+                botDiv.innerHTML = '¡Gracias por tu interés! Para darte una respuesta personalizada, te invito a escribirnos directamente por WhatsApp.';
+            }
+            const waBtn = document.createElement('div');
+            waBtn.style.marginTop = '0.75rem';
+            waBtn.innerHTML = '<a href="https://wa.me/573001620966?text=Hola%2C%20' + encodeURIComponent(text) + '" target="_blank" style="display:inline-block;padding:0.4rem 1rem;background:#25d366;color:white;border-radius:100px;font-size:0.8rem;font-weight:600;">Continuar por WhatsApp</a>';
+            botDiv.appendChild(waBtn);
+            msgs.appendChild(botDiv);
+            msgs.scrollTop = msgs.scrollHeight;
+        }, 800);
+        msgs.scrollTop = msgs.scrollHeight;
+    }
+</script>
+
+</body>
+</html>

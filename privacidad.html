@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE68RVN55R"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PE68RVN55R');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidad — x(MAX)</title>
+    <meta name="description" content="Politica de privacidad y tratamiento de datos personales de x(MAX) - PorMAX.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #fafafa;
+            --gray-50: #f5f5f7;
+            --gray-100: #e8e8ed;
+            --gray-200: #d2d2d7;
+            --gray-300: #b0b0b8;
+            --gray-400: #86868b;
+            --gray-500: #6e6e73;
+            --gray-600: #424245;
+            --gray-700: #2d2d30;
+            --gray-800: #1d1d1f;
+            --accent: #c8a04e;
+            --accent-light: #e8c96e;
+            --accent-glow: rgba(200, 160, 78, 0.15);
+            --gradient-dark: linear-gradient(180deg, #0a0a0a 0%, #1a1a1f 100%);
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+            --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: var(--black);
+        }
+
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 80px);
+        }
+
+        /* ========== NAV ========== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 clamp(20px, 5vw, 80px);
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .nav-logo img {
+            height: 28px;
+            width: auto;
+        }
+
+        .nav-back {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-300);
+            transition: color 0.2s;
+            letter-spacing: 0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-back:hover { color: var(--white); }
+
+        .nav-back svg {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* ========== PRIVACY CONTENT ========== */
+        .privacy-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .privacy-hero .section-label {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .privacy-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-hero p {
+            font-size: 1rem;
+            color: var(--gray-400);
+        }
+
+        .privacy-content {
+            padding: 60px 0 80px;
+        }
+
+        .privacy-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .privacy-section {
+            margin-bottom: 3rem;
+        }
+
+        .privacy-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .privacy-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        .privacy-section p {
+            font-size: 0.95rem;
+            color: var(--gray-300);
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .privacy-section ul li {
+            font-size: 0.95rem;
+            color: var(--gray-300);
+            line-height: 1.8;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .privacy-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7em;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .privacy-section a {
+            color: var(--accent);
+            transition: color 0.2s;
+        }
+
+        .privacy-section a:hover {
+            color: var(--accent-light);
+        }
+
+        .privacy-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .privacy-card p {
+            margin-bottom: 0.25rem;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: var(--black);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo img {
+            height: 24px;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .footer-social a:hover {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .footer-social svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--gray-400);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 900px) {
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .privacy-hero {
+                padding: 120px 0 40px;
+            }
+            .privacy-content {
+                padding: 40px 0 60px;
+            }
+            .privacy-section {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="index.html" class="nav-logo">
+        <img src="assets/logo-dark.png" alt="x(MAX)">
+    </a>
+    <a href="index.html" class="nav-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Volver al inicio
+    </a>
+</nav>
+
+<!-- HERO -->
+<section class="privacy-hero">
+    <div class="container">
+        <p class="section-label">Legal</p>
+        <h1>Politica de Privacidad</h1>
+        <p>Ultima actualizacion: marzo de 2026</p>
+    </div>
+</section>
+
+<!-- CONTENT -->
+<section class="privacy-content">
+    <div class="container">
+        <div class="privacy-body">
+
+            <!-- 1 -->
+            <div class="privacy-section">
+                <h2>1. Responsable del tratamiento</h2>
+                <p><strong>x(MAX)</strong> (PorMAX &mdash; Ir por mucho ms), con domicilio en Colombia, es el responsable del tratamiento de los datos personales recopilados a traves de este sitio web, nuestro chatbot de WhatsApp y las plataformas digitales asociadas.</p>
+                <div class="privacy-card">
+                    <p><strong>Correo electronico:</strong> <a href="mailto:somos.xmax@gmail.com">somos.xmax@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573001620966">+57 300 162 0966</a></p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="privacy-section">
+                <h2>2. Marco legal</h2>
+                <p>Esta politica se rige por la legislacion colombiana vigente en materia de proteccion de datos personales, en particular:</p>
+                <ul>
+                    <li><strong>Ley 1581 de 2012</strong> &mdash; Ley de Proteccion de Datos Personales.</li>
+                    <li><strong>Decreto 1377 de 2013</strong> &mdash; que reglamenta parcialmente la Ley 1581.</li>
+                    <li><strong>Ley 1266 de 2008</strong> &mdash; Ley de Habeas Data.</li>
+                </ul>
+                <p>En cumplimiento de estas normas, x(MAX) garantiza la proteccion, confidencialidad, seguridad y el adecuado tratamiento de los datos personales de sus usuarios.</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="privacy-section">
+                <h2>3. Datos que recopilamos</h2>
+                <p>Recopilamos los siguientes tipos de informacion cuando interactuas con nuestros servicios:</p>
+
+                <h3>Datos proporcionados directamente</h3>
+                <ul>
+                    <li>Nombre y apellidos</li>
+                    <li>Numero de telefono / WhatsApp</li>
+                    <li>Correo electronico</li>
+                    <li>Nombre del negocio o emprendimiento</li>
+                    <li>Mensajes enviados a traves del chatbot o formularios de contacto</li>
+                </ul>
+
+                <h3>Datos recopilados automaticamente</h3>
+                <ul>
+                    <li>Direccion IP y ubicacion aproximada</li>
+                    <li>Tipo de navegador y dispositivo</li>
+                    <li>Paginas visitadas y tiempo de permanencia</li>
+                    <li>Fuente de trafico (como llegaste a nuestro sitio)</li>
+                </ul>
+
+                <h3>Datos del chatbot y WhatsApp</h3>
+                <ul>
+                    <li>Historial de conversaciones con nuestro chatbot</li>
+                    <li>Preferencias y solicitudes realizadas</li>
+                    <li>Datos de pedidos procesados a traves del sistema</li>
+                </ul>
+            </div>
+
+            <!-- 4 -->
+            <div class="privacy-section">
+                <h2>4. Finalidad del tratamiento</h2>
+                <p>Los datos personales recopilados seran utilizados para las siguientes finalidades:</p>
+                <ul>
+                    <li>Prestar nuestros servicios de sistema inteligente de pedidos, CRM, chatbot y marketing digital.</li>
+                    <li>Gestionar pedidos y solicitudes de los clientes de tu negocio.</li>
+                    <li>Enviar comunicaciones comerciales, promociones y actualizaciones del servicio (previa autorizacion).</li>
+                    <li>Mejorar la experiencia del usuario y personalizar nuestros servicios.</li>
+                    <li>Realizar analisis estadisticos y de rendimiento.</li>
+                    <li>Cumplir con obligaciones legales y regulatorias.</li>
+                    <li>Atender consultas, quejas y reclamos.</li>
+                </ul>
+            </div>
+
+            <!-- 5 -->
+            <div class="privacy-section">
+                <h2>5. Uso de cookies y tecnologias similares</h2>
+                <p>Nuestro sitio web puede utilizar cookies y tecnologias similares para:</p>
+                <ul>
+                    <li><strong>Cookies esenciales:</strong> necesarias para el funcionamiento basico del sitio.</li>
+                    <li><strong>Cookies analiticas:</strong> nos ayudan a entender como los visitantes interactuan con el sitio (por ejemplo, Google Analytics).</li>
+                    <li><strong>Cookies de marketing:</strong> utilizadas para mostrar publicidad relevante en plataformas de terceros (Meta Ads, Google Ads).</li>
+                </ul>
+                <p>Puedes configurar tu navegador para rechazar cookies o recibir una alerta cuando se envien. Sin embargo, algunas funciones del sitio podrian no funcionar correctamente sin ellas.</p>
+            </div>
+
+            <!-- 6 -->
+            <div class="privacy-section">
+                <h2>6. Chatbot, WhatsApp y tratamiento de datos</h2>
+                <p>Nuestro chatbot de WhatsApp recopila y procesa mensajes para brindar una experiencia de atencion automatizada. Al interactuar con el chatbot:</p>
+                <ul>
+                    <li>Tus mensajes pueden ser procesados por inteligencia artificial para generar respuestas automaticas.</li>
+                    <li>Los datos de las conversaciones se almacenan de forma segura para mejorar el servicio y gestionar pedidos.</li>
+                    <li>No compartimos el contenido de tus conversaciones con terceros, excepto cuando sea necesario para la prestacion del servicio o por obligacion legal.</li>
+                    <li>Los datos de pedidos se almacenan en nuestro CRM interno exclusivamente para la gestion comercial de tu negocio.</li>
+                </ul>
+                <p>El uso de WhatsApp esta sujeto ademas a la <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">politica de privacidad de WhatsApp/Meta</a>.</p>
+            </div>
+
+            <!-- 7 -->
+            <div class="privacy-section">
+                <h2>7. Comparticion de datos con terceros</h2>
+                <p>x(MAX) no vende, alquila ni comercializa datos personales. Podemos compartir informacion con:</p>
+                <ul>
+                    <li><strong>Proveedores de tecnologia:</strong> servicios de hosting, analisis web y herramientas de comunicacion que nos ayudan a operar la plataforma.</li>
+                    <li><strong>Plataformas publicitarias:</strong> Meta (Facebook/Instagram) y Google para campanas de marketing digital, utilizando datos anonimizados o agregados.</li>
+                    <li><strong>Autoridades competentes:</strong> cuando sea requerido por ley o por orden judicial.</li>
+                </ul>
+            </div>
+
+            <!-- 8 -->
+            <div class="privacy-section">
+                <h2>8. Derechos del titular de los datos</h2>
+                <p>De acuerdo con la Ley 1581 de 2012, como titular de los datos personales tienes derecho a:</p>
+                <ul>
+                    <li><strong>Conocer:</strong> acceder a tus datos personales que se encuentren en nuestras bases de datos.</li>
+                    <li><strong>Actualizar:</strong> solicitar la correccion de datos inexactos, incompletos o desactualizados.</li>
+                    <li><strong>Rectificar:</strong> pedir la modificacion de informacion que sea erronea.</li>
+                    <li><strong>Suprimir:</strong> solicitar la eliminacion de tus datos cuando consideres que no estan siendo tratados conforme a la ley.</li>
+                    <li><strong>Revocar:</strong> retirar tu autorizacion para el tratamiento de tus datos en cualquier momento.</li>
+                    <li><strong>Presentar quejas:</strong> ante la Superintendencia de Industria y Comercio (SIC) si consideras que tus derechos han sido vulnerados.</li>
+                </ul>
+                <p>Para ejercer cualquiera de estos derechos, puedes contactarnos a traves de:</p>
+                <div class="privacy-card">
+                    <p><strong>Correo:</strong> <a href="mailto:somos.xmax@gmail.com">somos.xmax@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573001620966">+57 300 162 0966</a></p>
+                </div>
+                <p>Responderemos tu solicitud en un plazo maximo de quince (15) dias habiles, de conformidad con la normativa vigente.</p>
+            </div>
+
+            <!-- 9 -->
+            <div class="privacy-section">
+                <h2>9. Seguridad de los datos</h2>
+                <p>Implementamos medidas tecnicas, humanas y administrativas razonables para proteger tus datos personales contra acceso no autorizado, perdida, alteracion o destruccion. Entre estas medidas se incluyen:</p>
+                <ul>
+                    <li>Cifrado de datos en transito y en reposo.</li>
+                    <li>Control de acceso restringido a la informacion.</li>
+                    <li>Monitoreo periodico de nuestros sistemas.</li>
+                </ul>
+            </div>
+
+            <!-- 10 -->
+            <div class="privacy-section">
+                <h2>10. Vigencia y modificaciones</h2>
+                <p>Esta politica de privacidad entra en vigencia a partir de marzo de 2026 y permanecera vigente mientras x(MAX) continue operando. Nos reservamos el derecho de actualizar esta politica en cualquier momento. Las modificaciones seran publicadas en esta misma pagina con la fecha de actualizacion correspondiente.</p>
+                <p>Te recomendamos revisar periodicamente esta pagina para mantenerte informado sobre como protegemos tu informacion.</p>
+            </div>
+
+            <!-- 11 -->
+            <div class="privacy-section">
+                <h2>11. Contacto</h2>
+                <p>Si tienes preguntas, inquietudes o solicitudes relacionadas con esta politica de privacidad o el tratamiento de tus datos personales, no dudes en contactarnos:</p>
+                <div class="privacy-card">
+                    <p><strong>Empresa:</strong> x(MAX) &mdash; PorMAX</p>
+                    <p><strong>Correo:</strong> <a href="mailto:somos.xmax@gmail.com">somos.xmax@gmail.com</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573001620966">+57 300 162 0966</a></p>
+                    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61578468688463" target="_blank" rel="noopener">facebook.com/xMAX</a></p>
+                    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/somoxmax/" target="_blank" rel="noopener">@somoxmax</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-logo">
+                <img src="assets/logo-dark.png" alt="x(MAX)">
+            </a>
+            <span class="footer-copy">&copy; 2026 x(MAX) &middot; PORMAX &middot; Ir por mucho mas</span>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61578468688463" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/somoxmax/" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                </a>
+                <a href="mailto:somos.xmax@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="var(--gray-400)" stroke-width="2"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
