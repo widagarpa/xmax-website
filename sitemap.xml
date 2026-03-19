@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://xmax-pormax.netlify.app/</loc>
+        <loc>https://somosxmax.netlify.app/</loc>
         <lastmod>2026-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://xmax-pormax.netlify.app/plan-basico.html</loc>
+        <loc>https://somosxmax.netlify.app/plan-basico.html</loc>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://xmax-pormax.netlify.app/plan-impulso.html</loc>
+        <loc>https://somosxmax.netlify.app/plan-impulso.html</loc>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://xmax-pormax.netlify.app/plan-pro.html</loc>
+        <loc>https://somosxmax.netlify.app/plan-pro.html</loc>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://xmax-pormax.netlify.app/privacidad.html</loc>
+        <loc>https://somosxmax.netlify.app/privacidad.html</loc>
         <lastmod>2026-03-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
