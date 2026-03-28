@@ -121,8 +121,9 @@
             --gray-100: #f5e6c8;
             --gray-200: #eddcba;
             --gray-300: #a09070;
-            --gray-400: rgba(240,236,228,0.55);
-            --gray-500: rgba(240,236,228,0.4);
+            --gray-400: #8a8078;
+            --gray-500: #6e665e;
+            --text-light: rgba(240,236,228,0.75);
             --gray-600: #4d4843;
             --gray-700: #3a3632;
             --gray-800: #1c1c35;
@@ -205,6 +206,40 @@
         .reveal-delay-2 { transition-delay: 0.2s; }
         .reveal-delay-3 { transition-delay: 0.3s; }
         .reveal-delay-4 { transition-delay: 0.4s; }
+
+
+        /* === Dark section text overrides === */
+        .hero .section-subtitle,
+        .how-it-works .section-subtitle,
+        .comparison .section-subtitle,
+        .final-cta .section-subtitle,
+        .marketing .section-subtitle,
+        .timeline .section-subtitle { color: rgba(240,236,228,0.6); }
+
+        .hero p, .how-it-works p, .comparison p,
+        .final-cta p, .marketing p, .timeline p,
+        .how-step p, .mkt-card p { color: rgba(240,236,228,0.5); }
+
+        .footer-copy, .footer-links a,
+        .chatbot-subtitle { color: rgba(240,236,228,0.5); }
+
+        .comparison-table td { color: rgba(240,236,228,0.7); }
+
+        /* Light section text — ensure dark readable text */
+        .problem .section-subtitle,
+        .benefits .section-subtitle,
+        .pricing .section-subtitle,
+        .why .section-subtitle { color: #6e665e; }
+
+        .problem-card p, .benefit-stat-card p,
+        .why-card p, .feature-card p { color: #6e665e; }
+
+        .price-card p, .commission-box p { color: #6e665e; }
+
+        /* Price cards with dark bg inside light section */
+        .price-card.featured p,
+        .price-card.featured .price-sub,
+        .price-card.featured li { color: rgba(240,236,228,0.7); }
 
         /* ========== NAV ========== */
         .nav {
