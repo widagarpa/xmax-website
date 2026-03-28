@@ -197,13 +197,49 @@
             .footer-links { justify-content: center; }
             .footer-social { justify-content: center; }
         }
+${LOGO_CSS}
+    
+        /* ========== LOGO X(MAX) ========== */
+        .logo-xmax {
+            display: inline-flex;
+            align-items: center;
+            font-family: 'Clash Display', 'Inter', system-ui, sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, #dbb96a 0%, #c8a04e 50%, #9a7a2e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .logo-x {
+            font-size: 0.45em;
+            margin-right: 1px;
+        }
+        .logo-paren {
+            font-size: 1.15em;
+            line-height: 0.85;
+        }
+        .logo-max {
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+        .nav-logo .logo-xmax {
+            font-size: 28px;
+        }
+        .footer-logo .logo-xmax {
+            font-size: 24px;
+        }
+        .loader .logo-xmax {
+            font-size: 48px;
+        }
+
     </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="nav">
-    <a href="index.html" class="nav-logo"><img src="assets/logo-nav.svg" alt="x(MAX)"></a>
+    <a href="index.html" class="nav-logo"><span class="logo-xmax" aria-label="x(MAX)"><span class="logo-x">X</span><span class="logo-paren">(</span><span class="logo-max">MAX</span><span class="logo-paren">)</span></span></a>
     <a href="index.html#planes" class="nav-back">&larr; Ver todos los planes</a>
 </nav>
 
@@ -320,7 +356,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-inner">
-            <a href="index.html" class="footer-logo"><img src="assets/logo-nav.svg" alt="x(MAX)"></a>
+            <a href="index.html" class="footer-logo"><span class="logo-xmax" aria-label="x(MAX)"><span class="logo-x">X</span><span class="logo-paren">(</span><span class="logo-max">MAX</span><span class="logo-paren">)</span></span></a>
             <div class="footer-links">
                 <a href="privacidad.html">Privacidad</a>
                 <a href="mailto:somos.xmax@gmail.com">somos.xmax@gmail.com</a>
