@@ -6,5 +6,5 @@
       <stop offset="100%" stop-color="#9a7a2e"/>
     </linearGradient>
   </defs>
-  <text x="2" y="25" font-family="'Clash Display','Inter',system-ui,sans-serif" font-weight="700" fill="url(#goldGrad)" letter-spacing="-0.5"><tspan font-size="10">X</tspan><tspan font-size="24">(</tspan><tspan font-size="28" letter-spacing="0.5">MAX</tspan><tspan font-size="24">)</tspan></text>
+  <text x="2" y="25" font-family="'Clash Display','Inter',system-ui,sans-serif" font-weight="700" fill="url(#goldGrad)"><tspan font-size="10" dy="-7">X</tspan><tspan font-size="24" dy="7">(</tspan><tspan font-size="28" letter-spacing="0.5">MAX</tspan><tspan font-size="24">)</tspan></text>
 </svg>
