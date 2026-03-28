@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0a0a0a"/>
-  <text x="600" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="120" font-weight="bold" fill="#fafafa">
-    <tspan font-size="80" dy="-10">x</tspan><tspan font-size="120" fill="#c8a04e">(</tspan><tspan font-size="120" fill="#fafafa">MAX</tspan><tspan font-size="120" fill="#c8a04e">)</tspan>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1e"/>
+      <stop offset="100%" stop-color="#16162b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbb96a"/>
+      <stop offset="50%" stop-color="#c8a04e"/>
+      <stop offset="100%" stop-color="#9a7a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="240" text-anchor="middle" font-family="'Clash Display', 'Inter', sans-serif" font-weight="700">
+    <tspan font-size="60" fill="url(#gold)">X</tspan><tspan font-size="120" fill="url(#gold)">(</tspan><tspan font-size="120" fill="#f0ece4" letter-spacing="2">MAX</tspan><tspan font-size="120" fill="url(#gold)">)</tspan>
   </text>
-  <text x="600" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#fafafa" font-weight="bold">Tu negocio vendiendo 24/7</text>
-  <text x="600" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#888888">mientras tú descansas.</text>
-  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c8a04e" letter-spacing="3">PEDIDOS · CRM · CHATBOT · MARKETING DIGITAL</text>
+  <text x="600" y="340" text-anchor="middle" font-family="'Clash Display', 'Inter', sans-serif" font-size="36" fill="#f0ece4" font-weight="700">Tu negocio vendiendo 24/7</text>
+  <text x="600" y="390" text-anchor="middle" font-family="'Inter', sans-serif" font-size="22" fill="rgba(240,236,228,0.5)">mientras tu descansas.</text>
+  <text x="600" y="480" text-anchor="middle" font-family="'Clash Display', 'Inter', sans-serif" font-size="18" fill="#c8a04e" letter-spacing="3" font-weight="600">PEDIDOS · CRM · CHATBOT · MARKETING DIGITAL</text>
 </svg>

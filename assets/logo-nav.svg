@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 32" width="136" height="32">
-  <text x="2" y="26" font-family="'Space Grotesk', 'Inter', system-ui, sans-serif" font-weight="800" font-size="28" fill="#fafafa">
-    <tspan fill="#fafafa">x</tspan><tspan fill="#86868b" font-size="24">(</tspan><tspan fill="#c8a04e" letter-spacing="1.5">MAX</tspan><tspan fill="#86868b" font-size="24">)</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 32" width="140" height="32">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbb96a"/>
+      <stop offset="50%" stop-color="#c8a04e"/>
+      <stop offset="100%" stop-color="#9a7a2e"/>
+    </linearGradient>
+  </defs>
+  <text font-family="'Clash Display', 'Inter', system-ui, sans-serif" font-weight="700" fill="url(#goldGrad)">
+    <tspan x="2" y="24" font-size="10">X</tspan>
+    <tspan x="14" y="25" font-size="26">(</tspan>
+    <tspan x="30" y="25" font-size="28" letter-spacing="1">MAX</tspan>
+    <tspan x="108" y="25" font-size="26">)</tspan>
   </text>
 </svg>
