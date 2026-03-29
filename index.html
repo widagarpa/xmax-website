@@ -31,20 +31,20 @@
     <title>somosxmax — Marketing Digital, CRM y Chatbot para tu Negocio</title>
     <meta name="description" content="somosxmax: sistema de pedidos, CRM, catálogo digital, chatbot 24/7 y marketing para pequeñas empresas en Colombia. Vende más sin trabajar más.">
     <meta name="keywords" content="somosxmax, marketing digital Colombia, CRM pequeñas empresas, chatbot negocios, catálogo digital, agencia marketing digital">
-    <link rel="canonical" href="https://somosxmax.netlify.app/">
+    <link rel="canonical" href="https://somosxmax.pages.dev/">
     <meta property="og:title" content="somosxmax — Marketing Digital, CRM y Chatbot para tu Negocio">
     <meta property="og:description" content="Pedidos, CRM, chatbot y marketing digital. Todo en un solo ecosistema para que vendas más sin trabajar más.">
-    <meta property="og:image" content="https://somosxmax.netlify.app/assets/og-image.svg">
+    <meta property="og:image" content="https://somosxmax.pages.dev/assets/og-image.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://somosxmax.netlify.app">
+    <meta property="og:url" content="https://somosxmax.pages.dev">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="somosxmax">
     <meta property="og:locale" content="es_CO">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="somosxmax — Marketing Digital para tu Negocio">
     <meta name="twitter:description" content="CRM, chatbot 24/7 y marketing digital para pequeñas empresas en Colombia.">
-    <meta name="twitter:image" content="https://somosxmax.netlify.app/assets/og-image.svg">
+    <meta name="twitter:image" content="https://somosxmax.pages.dev/assets/og-image.svg">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <script type="application/ld+json">
     [
@@ -54,7 +54,7 @@
             "name": "somosxmax",
             "alternateName": ["x(MAX)", "xMAX by PORMAX", "PORMAX"],
             "description": "Agencia de marketing digital en Colombia. CRM, chatbot 24/7, catálogo digital y marketing para pequeñas empresas.",
-            "url": "https://somosxmax.netlify.app",
+            "url": "https://somosxmax.pages.dev",
             "email": "somos.xmax@gmail.com",
             "telephone": "+573001620966",
             "areaServed": {
@@ -101,7 +101,7 @@
             "provider": {
                 "@type": "Organization",
                 "name": "somosxmax",
-                "url": "https://somosxmax.netlify.app"
+                "url": "https://somosxmax.pages.dev"
             }
         }
     ]
@@ -3211,9 +3211,11 @@ ${LOGO_CSS}
 
         <div class="form-divider reveal">o déjanos tus datos</div>
 
-        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html" class="contact-form reveal">
-            <input type="hidden" name="form-name" value="contacto">
-            <p style="display:none"><label>No llenar: <input name="bot-field"></label></p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form reveal">
+            <input type="hidden" name="access_key" value="9f00b974-3d22-44cf-9461-5e1ea29a82e0">
+            <input type="hidden" name="subject" value="Nuevo lead desde somosxmax">
+            <input type="hidden" name="redirect" value="https://somosxmax.pages.dev/gracias.html">
+            <input type="checkbox" name="botcheck" style="display:none">
             <div class="form-row">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
