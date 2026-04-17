@@ -3261,7 +3261,7 @@
             <a href="/" class="footer-logo">
                 <span class="logo-xmax" aria-label="x(MAX)"><span class="logo-x">X</span><span class="logo-paren">(</span><span class="logo-max">MAX</span><span class="logo-paren">)</span></span>
             </a>
-            <span class="footer-copy">&copy; 2026 x(MAX) &middot; PORMAX &middot; Ir por mucho más &middot; <a href="privacidad.html" style="color:var(--gray-400);text-decoration:underline;">Política de privacidad</a></span>
+            <span class="footer-copy">&copy; 2026 x(MAX) &middot; PORMAX &middot; Ir por mucho más &middot; <a href="index.html#casos" style="color:var(--gray-400);text-decoration:underline;margin-right:8px">Casos</a> &middot; <a href="terminos.html" style="color:var(--gray-400);text-decoration:underline;margin-right:8px">Términos</a> &middot; <a href="privacidad.html" style="color:var(--gray-400);text-decoration:underline;">Privacidad</a></span>
             <div class="footer-social">
                 <a href="https://www.facebook.com/profile.php?id=61578468688463" target="_blank" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -3434,12 +3434,17 @@
         'funciona': '¡Súper fácil! En 3 pasos:\n\n1. Tu cliente ve tu catálogo digital (un simple link)\n2. Hace su pedido y paga\n3. Tú gestionas todo desde el panel admin\n\nIncluye chatbot 24/7, CRM y agenda automática.',
         'precio': 'El Plan Básico tiene <b>$0 de montaje y $0 de mensualidad</b>.\n\nSolo pagas 7% de comisión por producto vendido. Si no vendes, no pagas. Puedes cancelar cuando quieras — <b>sin cláusula de permanencia</b>. ¿Quieres más detalles?',
         'demo': '¡Claro! Te podemos mostrar cómo funciona todo el ecosistema. Escríbenos por WhatsApp al <b>300 162 0966</b> y agendamos una demo personalizada para tu negocio.',
+        'onboarding': 'El onboarding toma <b>2-3 días hábiles</b>:\n\n1. Llenas el formulario con los datos de tu negocio\n2. Subes cédula, certificación bancaria y logo\n3. Verificamos (KYC básico) y te llamamos 10 min\n4. ¡Tu tienda queda en línea!\n\nEmpezar: <a href="https://x-max-app.up.railway.app/onboarding/nuevo" style="color:#c8a04e">crear mi tienda</a>.',
+        'pago': 'Aceptamos <b>Bre-B, Nequi, Daviplata y transferencia bancaria</b>. Cada tenant configura sus cuentas y los pagos van <b>directo a su banco</b> — x(MAX) no custodia fondos. El cliente final paga con QR o transferencia y el tenant confirma recepción desde el panel.',
+        'soporte': 'Soporte por WhatsApp al <b>300 162 0966</b>:\n\n• Plan Básico: respuesta en 48h\n• Plan Impulso: respuesta en 4h\n• Plan Pro: dedicado + llamada mensual\n\n90 días de onboarding incluidos en todos los planes.',
+        'casos': '¡Tenemos casos reales!\n\n• <a href="casos/shiwan.html" style="color:#c8a04e"><b>SHIWAN</b></a>: distribuidora con 235 productos en línea en 48h\n• <a href="casos/desayunos-con-amor.html" style="color:#c8a04e"><b>Desayunos con Amor</b></a>: delivery Pereira con chatbot IA Lola\n\nDale click para ver métricas y testimonios.',
+        'terminos': 'Puedes leer los términos completos aquí: <a href="terminos.html" style="color:#c8a04e"><b>terminos.html</b></a>\n\nPuntos clave:\n• x(MAX) es <b>facilitador tecnológico</b>, no custodia fondos\n• Sin cláusula de permanencia, cancela cuando quieras\n• Cumplimos Ley 1480 (retracto 5 días) y Ley 1581 (Habeas Data)',
     };
 
     function chatAnswer(key) {
         const msgs = document.getElementById('chatMessages');
         // User message
-        const labels = {planes:'Ver planes', funciona:'¿Cómo funciona?', precio:'¿Cuánto cuesta?', demo:'Quiero una demo'};
+        const labels = {planes:'Ver planes', funciona:'¿Cómo funciona?', precio:'¿Cuánto cuesta?', demo:'Quiero una demo', onboarding:'¿Cómo me registro?', pago:'¿Cómo cobro?', soporte:'Soporte', casos:'Casos reales', terminos:'Términos'};
         const userDiv = document.createElement('div');
         userDiv.className = 'chat-msg user';
         userDiv.textContent = labels[key] || key;
