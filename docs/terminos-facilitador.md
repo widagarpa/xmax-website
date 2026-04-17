@@ -67,13 +67,41 @@ Al aceptar estos Términos, el Tenant se obliga a:
 
 ---
 
-## 5. Obligaciones del Cliente Final
+## 5. Obligaciones del Cliente Final y derechos del consumidor (Ley 1480 de 2011)
 
 El Cliente Final que realiza una compra a través de una tienda construida con la Plataforma:
 
 1. Se obliga directamente con el Tenant por el contrato de compraventa.
 2. Debe remitir sus inquietudes, reclamos o solicitudes de reembolso directamente al Tenant, cuyos datos de contacto aparecen visibles en cada tienda.
 3. Autoriza el tratamiento de sus datos personales según la Política de Privacidad vigente.
+
+### 5.1 Derecho de retracto (Ley 1480 de 2011, art. 47)
+
+En las ventas realizadas por métodos **no tradicionales o a distancia** (compras por internet, catálogo, teléfono), el Cliente Final tiene derecho a retractarse del contrato dentro de los **cinco (5) días hábiles** siguientes a la entrega del producto o a la celebración del contrato, sin necesidad de justificar la decisión y sin penalidad alguna.
+
+El retracto NO aplica cuando:
+
+1. Los productos son personalizados o hechos a la medida del consumidor.
+2. Los productos son perecederos (alimentos frescos, productos de panadería, desayunos preparados, etc.).
+3. Los bienes son de uso personal (ropa interior, productos de higiene) ya utilizados.
+4. El servicio ya fue prestado a satisfacción del consumidor.
+5. El bien adquirido, por su naturaleza, no pueda ser devuelto.
+
+El Cliente Final ejercita el retracto **contactando directamente al Tenant** (WhatsApp, email o formulario de la tienda). El Tenant tiene la obligación de reembolsar dentro de los 30 días calendario siguientes.
+
+La Plataforma no interviene en el retracto ni procesa reembolsos; únicamente puede mediar como canal de comunicación a solicitud de cualquiera de las partes.
+
+### 5.2 Garantía legal (Ley 1480 de 2011, art. 7-9)
+
+Todos los productos ofrecidos por Tenants gozan de **garantía legal**. El Tenant es el responsable directo frente al Cliente Final por defectos de calidad o idoneidad.
+
+### 5.3 Protección del consumidor ante fraude
+
+Si el Cliente Final considera que un Tenant ha incumplido sus derechos, puede:
+
+1. Intentar solución directa con el Tenant.
+2. Notificar a la Plataforma al correo `somos.xmax@gmail.com` para que inicie revisión del Tenant.
+3. Presentar denuncia ante la **Superintendencia de Industria y Comercio (SIC)**.
 
 ---
 
@@ -138,11 +166,23 @@ La Plataforma podrá suspender o terminar el servicio al Tenant en los siguiente
 
 ---
 
-## 10. Tratamiento de datos personales
+## 10. Tratamiento de datos personales y cookies
+
+### 10.1 Datos personales (Ley 1581 de 2012)
 
 El tratamiento de datos se rige por la **Política de Privacidad** (documento complementario), en cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013.
 
 La Plataforma actúa como **responsable del tratamiento** respecto a los datos de los Tenants, y como **encargado del tratamiento** respecto a los datos de los Clientes Finales, siguiendo las instrucciones del Tenant.
+
+### 10.2 Uso de cookies
+
+La Plataforma y las tiendas de los Tenants utilizan cookies y tecnologías similares para:
+
+1. **Cookies esenciales**: mantener la sesión iniciada, preservar el carrito de compras, garantizar la seguridad (CSRF tokens). No requieren consentimiento por ser estrictamente necesarias para la prestación del servicio solicitado.
+2. **Cookies de analítica**: medir el uso del sitio (Google Analytics con IP anonimizada). Activadas por defecto; el usuario puede desactivarlas desde su navegador.
+3. **Cookies de marketing**: solo si el Tenant ha configurado Meta Pixel, Google Ads u otros píxeles publicitarios en su tienda. Requieren consentimiento expreso mediante banner visible en la primera visita.
+
+Al continuar navegando o cerrar el banner de cookies, el usuario acepta el uso de cookies conforme a esta política. El usuario puede revocar el consentimiento en cualquier momento borrando las cookies desde su navegador.
 
 ---
 
